@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+</head>
+<body>
+
+
+<script>
+    //문제1
+    function greet(name){
+
+        console.log("내가 좋아하는 캐릭터는",name,"입니다!")
+    }
+
+    greet("차이로이코구마")
+
+    //문제2
+    //매개변수는 순서대로 출력됨
+    //첫번째 조건에서 통과과 되면 다음 조건 무시됨
+    function myDay(year,month,day){
+        if(year && month && day){//day변수만 있어도 됨 왜냐하면 day는 제일 마지막에 선언했으므로 값이 3개가 들어와야 첫번쨰 조건 성립됨
+            return `${year}/${month}/${day}`
+        } else if(year && month){
+            return `${year}/${month}`+ " 생일을 입력하세요"
+        } else if(year){
+            return `${year}`+ " 8자리 생년월일을 입력하세요"
+        }
+    }
+    console.log(myDay(1986))
+</script>
+
+</body>
+</html>
