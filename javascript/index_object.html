@@ -5,18 +5,31 @@
     <title>javascript</title>
 </head>
 <body>
-<!--
- !!객체!!
- {}
- -->
+<dl>
+    <dt>객체</dt>
+    <dd>배열은 [] 객체는 {}</dd>
+    <dd>{name:yuni} > name = 키값</dd>
+    <dd>[배열]안에 {객체} 사용가능 > [{},{}]</dd>
+</dl>
 <script>
-    let yser ={
+    let user ={
         name : "yuni",
         year : 1986,
         birthday : 823,
     }
-    console.log(yser.name)
-    //결과값 : yuni
+    console.log(user)
+
+    user.name = "yooni"
+    console.log(user.name)
+
+    let userList =
+        [
+            {name : "dd", year : 1998},
+            {name : "chan", year : 2001},
+            {name : "bright", year : 1997}
+        ]
+    console.log(userList)
+    console.log("첫번째 사람 이름은",userList[0].name)
 </script>
 
 </body>
